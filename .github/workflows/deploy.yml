@@ -1,0 +1,38 @@
+name: Deploy AWS Portfolio
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "website/**"
+      - ".github/workflows/deploy.yml"
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy Portfolio to AWS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::742986823475:role/AmirPortfolioGitHubDeployRole
+          aws-region: us-east-1
+
+      - name: Deploy website to S3
+        run: |
+          aws s3 sync website/ s3://amirsaleh-security-portfolio --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id E1HTQQNU3940WA \
+            --paths "/*"
