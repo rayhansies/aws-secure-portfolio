@@ -320,86 +320,58 @@
             <div class="cert-grid">
 
                 <div class="cert-card">
-                    <span class="cert-type">COMPTIA</span>
+
+                    <span class="cert-type">
+                        COMPTIA
+                    </span>
 
                     <h3>
-                        Security+
+                        CompTIA Security+ (SY0-701)
                     </h3>
 
                     <p>
-                        Core cybersecurity concepts, threat management,
-                        security operations, identity, architecture, and risk.
+                        Cybersecurity fundamentals covering threats, vulnerabilities,
+                        security architecture, operations, identity and access control,
+                        risk management, and incident response.
                     </p>
+
                 </div>
 
 
                 <div class="cert-card">
-                    <span class="cert-type">AWS</span>
+
+                    <span class="cert-type">
+                        AWS
+                    </span>
 
                     <h3>
-                        Solutions Architect
+                        AWS Certified Solutions Architect – Associate
                     </h3>
 
                     <p>
-                        AWS architecture, resilient infrastructure,
-                        networking, storage, compute, and secure cloud design.
+                        Designing secure, resilient, high-performing,
+                        and cost-optimized architectures on Amazon Web Services.
                     </p>
+
                 </div>
 
 
                 <div class="cert-card">
-                    <span class="cert-type">AWS</span>
+
+                    <span class="cert-type">
+                        AWS
+                    </span>
 
                     <h3>
-                        Security Specialty
+                        AWS Certified Security – Specialty
                     </h3>
 
                     <p>
-                        AWS security architecture, IAM, data protection,
-                        monitoring, incident response, and infrastructure security.
+                        Advanced AWS security covering identity and access management,
+                        infrastructure protection, data protection, monitoring,
+                        logging, and incident response.
                     </p>
-                </div>
 
-
-                <div class="cert-card">
-                    <span class="cert-type">MICROSOFT</span>
-
-                    <h3>
-                        Azure Administrator
-                    </h3>
-
-                    <p>
-                        Azure identity, compute, networking,
-                        storage, monitoring, and administration.
-                    </p>
-                </div>
-
-
-                <div class="cert-card">
-                    <span class="cert-type">MICROSOFT</span>
-
-                    <h3>
-                        Windows Enterprise Support
-                    </h3>
-
-                    <p>
-                        Enterprise endpoint support,
-                        Windows troubleshooting, configuration, and administration.
-                    </p>
-                </div>
-
-
-                <div class="cert-card">
-                    <span class="cert-type">PROFESSIONAL DEVELOPMENT</span>
-
-                    <h3>
-                        Continuing Security Training
-                    </h3>
-
-                    <p>
-                        Ongoing development in cloud security,
-                        networking, security operations, DevSecOps, and automation.
-                    </p>
                 </div>
 
             </div>
@@ -433,6 +405,7 @@
                     <div class="project-topline">
 
                         <div>
+
                             <div class="project-number">
                                 01 / FEATURED PROJECT
                             </div>
@@ -440,7 +413,9 @@
                             <h3>
                                 Secure AWS Portfolio CI/CD
                             </h3>
+
                         </div>
+
 
                         <span class="project-status">
                             LIVE
@@ -463,6 +438,7 @@
                         </span>
 
                         <div class="architecture-flow">
+
                             <span>GitHub</span>
                             <strong>→</strong>
                             <span>OIDC</span>
@@ -472,6 +448,7 @@
                             <span>S3</span>
                             <strong>→</strong>
                             <span>CloudFront</span>
+
                         </div>
 
                     </div>
@@ -557,56 +534,88 @@
 
 
                 <!-- PROJECT 02 -->
-                <article class="project-card">
+    <!-- PROJECT 02 -->
+<article class="project-card">
 
-                    <div class="project-number">
-                        02
-                    </div>
+    <div class="project-topline">
 
-                    <h3>
-                        AWS IAM Security Lab
-                    </h3>
+        <div>
+            <div class="project-number">
+                02 / SECURITY LAB
+            </div>
 
-                    <p>
-                        Least-privilege identity and access management project
-                        focused on secure users, roles, policies, MFA, and access controls.
-                    </p>
+            <h3>
+                AWS IAM Security Lab
+            </h3>
+        </div>
 
-                    <span class="coming-soon">
-                        Coming next
-                    </span>
+        <span class="project-status">
+            COMPLETED
+        </span>
 
-                </article>
+    </div>
 
+    <p>
+        Least-privilege AWS identity and access management lab using
+        IAM users, groups, customer-managed policies, MFA, and controlled
+        Amazon S3 access.
+    </p>
 
+    <div class="project-tags">
+        <span>AWS IAM</span>
+        <span>Amazon S3</span>
+        <span>MFA</span>
+        <span>Least Privilege</span>
+        <span>Policy JSON</span>
+    </div>
 
-                <!-- PROJECT 03 -->
-                <article class="project-card">
+    <div class="security-block">
 
-                    <div class="project-number">
-                        03
-                    </div>
+        <span class="case-label">
+            VALIDATED CONTROLS
+        </span>
 
-                    <h3>
-                        VPC Security Architecture
-                    </h3>
+        <div class="security-controls">
 
-                    <p>
-                        Secure AWS network architecture using segmentation,
-                        routing, traffic controls, and layered security.
-                    </p>
+            <div>
+                <span class="control-dot"></span>
+                Group-based permissions
+            </div>
 
-                    <span class="coming-soon">
-                        Planned
-                    </span>
+            <div>
+                <span class="control-dot"></span>
+                MFA-protected console access
+            </div>
 
-                </article>
+            <div>
+                <span class="control-dot"></span>
+                No long-term access keys
+            </div>
 
+            <div>
+                <span class="control-dot"></span>
+                S3 read access allowed
+            </div>
+
+            <div>
+                <span class="control-dot"></span>
+                S3 upload successfully denied
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+    <a
+        href="https://github.com/rayhansies/aws-secure-portfolio/blob/main/docs/iam-security-lab.md"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link"
+    >
+        View Lab Documentation →
+    </a>
+
+</article>
 
 
 
