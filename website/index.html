@@ -62,10 +62,7 @@
 
                 <div class="hero-actions">
 
-                    <a
-                        href="#projects"
-                        class="btn btn-primary"
-                    >
+                    <a href="#projects" class="btn btn-primary">
                         View Projects
                     </a>
 
@@ -78,10 +75,7 @@
                         GitHub
                     </a>
 
-                    <a
-                        href="#contact"
-                        class="btn btn-secondary"
-                    >
+                    <a href="#contact" class="btn btn-secondary">
                         Contact Me
                     </a>
 
@@ -399,7 +393,7 @@
             <div class="projects-grid">
 
 
-                <!-- FEATURED PROJECT -->
+                <!-- PROJECT 01 -->
                 <article class="project-card featured project-case-study">
 
                     <div class="project-topline">
@@ -534,88 +528,222 @@
 
 
                 <!-- PROJECT 02 -->
-    <!-- PROJECT 02 -->
-<article class="project-card">
+                <article class="project-card">
 
-    <div class="project-topline">
+                    <div class="project-topline">
 
-        <div>
-            <div class="project-number">
-                02 / SECURITY LAB
+                        <div>
+
+                            <div class="project-number">
+                                02 / SECURITY LAB
+                            </div>
+
+                            <h3>
+                                AWS IAM Security Lab
+                            </h3>
+
+                        </div>
+
+                        <span class="project-status">
+                            COMPLETED
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Least-privilege AWS identity and access management lab using
+                        IAM users, groups, customer-managed policies, MFA, and controlled
+                        Amazon S3 access.
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>AWS IAM</span>
+                        <span>Amazon S3</span>
+                        <span>MFA</span>
+                        <span>Least Privilege</span>
+                        <span>Policy JSON</span>
+
+                    </div>
+
+
+                    <div class="security-block">
+
+                        <span class="case-label">
+                            VALIDATED CONTROLS
+                        </span>
+
+                        <div class="security-controls">
+
+                            <div>
+                                <span class="control-dot"></span>
+                                Group-based permissions
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                MFA-protected console access
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                No long-term access keys
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                S3 read access allowed
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                S3 upload successfully denied
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/rayhansies/aws-secure-portfolio/blob/main/docs/iam-security-lab.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Lab Documentation →
+                    </a>
+
+                </article>
+
+
+
+                <!-- PROJECT 03 -->
+                <article class="project-card">
+
+                    <div class="project-topline">
+
+                        <div>
+
+                            <div class="project-number">
+                                03 / NETWORK SECURITY LAB
+                            </div>
+
+                            <h3>
+                                AWS VPC Network Security Lab
+                            </h3>
+
+                        </div>
+
+                        <span class="project-status">
+                            COMPLETED
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Designed and validated a segmented AWS VPC using public and
+                        private subnets, controlled routing, security-group-to-security-group
+                        access, EC2 validation instances, and AWS Reachability Analyzer.
+                    </p>
+
+
+                    <div class="architecture-block">
+
+                        <span class="case-label">
+                            ARCHITECTURE
+                        </span>
+
+                        <div class="architecture-flow">
+
+                            <span>Internet</span>
+                            <strong>→</strong>
+                            <span>Public Subnet</span>
+                            <strong>→</strong>
+                            <span>TCP 8080</span>
+                            <strong>→</strong>
+                            <span>Private Subnet</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="security-block">
+
+                        <span class="case-label">
+                            VALIDATED CONTROLS
+                        </span>
+
+                        <div class="security-controls">
+
+                            <div>
+                                <span class="control-dot"></span>
+                                Public and private subnet segmentation
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                Private EC2 instance had no public IPv4 address
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                Security-group-to-security-group access
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                TCP 8080 validated as reachable
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                TCP 22 validated as not reachable
+                            </div>
+
+                            <div>
+                                <span class="control-dot"></span>
+                                Reachability Analyzer confirmed security enforcement
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-tags">
+
+                        <span>Amazon VPC</span>
+                        <span>EC2</span>
+                        <span>Security Groups</span>
+                        <span>Route Tables</span>
+                        <span>Internet Gateway</span>
+                        <span>Reachability Analyzer</span>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/rayhansies/aws-secure-portfolio/blob/main/docs/vpc-security-lab.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Lab Documentation →
+                    </a>
+
+                </article>
+
+
             </div>
 
-            <h3>
-                AWS IAM Security Lab
-            </h3>
         </div>
 
-        <span class="project-status">
-            COMPLETED
-        </span>
-
-    </div>
-
-    <p>
-        Least-privilege AWS identity and access management lab using
-        IAM users, groups, customer-managed policies, MFA, and controlled
-        Amazon S3 access.
-    </p>
-
-    <div class="project-tags">
-        <span>AWS IAM</span>
-        <span>Amazon S3</span>
-        <span>MFA</span>
-        <span>Least Privilege</span>
-        <span>Policy JSON</span>
-    </div>
-
-    <div class="security-block">
-
-        <span class="case-label">
-            VALIDATED CONTROLS
-        </span>
-
-        <div class="security-controls">
-
-            <div>
-                <span class="control-dot"></span>
-                Group-based permissions
-            </div>
-
-            <div>
-                <span class="control-dot"></span>
-                MFA-protected console access
-            </div>
-
-            <div>
-                <span class="control-dot"></span>
-                No long-term access keys
-            </div>
-
-            <div>
-                <span class="control-dot"></span>
-                S3 read access allowed
-            </div>
-
-            <div>
-                <span class="control-dot"></span>
-                S3 upload successfully denied
-            </div>
-
-        </div>
-
-    </div>
-
-    <a
-        href="https://github.com/rayhansies/aws-secure-portfolio/blob/main/docs/iam-security-lab.md"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="project-link"
-    >
-        View Lab Documentation →
-    </a>
-
-</article>
+    </section>
 
 
 
