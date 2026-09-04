@@ -645,29 +645,18 @@
 
 
                     <p>
-                        Designed and validated a segmented AWS VPC using public and
-                        private subnets, controlled routing, security-group-to-security-group
-                        access, EC2 validation instances, and AWS Reachability Analyzer.
+                        Built and validated a segmented AWS VPC with public and private
+                        subnets, controlled routing, security groups, and Reachability Analyzer.
                     </p>
 
 
-                    <div class="architecture-block">
+                    <div class="project-tags">
 
-                        <span class="case-label">
-                            ARCHITECTURE
-                        </span>
-
-                        <div class="architecture-flow">
-
-                            <span>Internet</span>
-                            <strong>→</strong>
-                            <span>Public Subnet</span>
-                            <strong>→</strong>
-                            <span>TCP 8080</span>
-                            <strong>→</strong>
-                            <span>Private Subnet</span>
-
-                        </div>
+                        <span>Amazon VPC</span>
+                        <span>EC2</span>
+                        <span>Security Groups</span>
+                        <span>Routing</span>
+                        <span>Reachability Analyzer</span>
 
                     </div>
 
@@ -682,47 +671,30 @@
 
                             <div>
                                 <span class="control-dot"></span>
-                                Public and private subnet segmentation
+                                Public/private subnet segmentation
                             </div>
 
                             <div>
                                 <span class="control-dot"></span>
-                                Private EC2 instance had no public IPv4 address
+                                Private EC2 had no public IPv4
                             </div>
 
                             <div>
                                 <span class="control-dot"></span>
-                                Security-group-to-security-group access
+                                TCP 8080 allowed between tiers
                             </div>
 
                             <div>
                                 <span class="control-dot"></span>
-                                TCP 8080 validated as reachable
+                                TCP 22 successfully blocked
                             </div>
 
                             <div>
                                 <span class="control-dot"></span>
-                                TCP 22 validated as not reachable
-                            </div>
-
-                            <div>
-                                <span class="control-dot"></span>
-                                Reachability Analyzer confirmed security enforcement
+                                Reachability Analyzer validation
                             </div>
 
                         </div>
-
-                    </div>
-
-
-                    <div class="project-tags">
-
-                        <span>Amazon VPC</span>
-                        <span>EC2</span>
-                        <span>Security Groups</span>
-                        <span>Route Tables</span>
-                        <span>Internet Gateway</span>
-                        <span>Reachability Analyzer</span>
 
                     </div>
 
